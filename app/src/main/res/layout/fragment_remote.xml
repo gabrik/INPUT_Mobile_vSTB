@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.input.cnit.ct.inputvstb.layout.RemoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DLNA Devices"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDevicesRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMediaRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonStartRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonPauseRemote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_pause"
+                android:text="@string/txt_btn_pause" />
+
+            <ImageButton
+                android:id="@+id/buttonPlayRemote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_play"
+                android:text="Start" />
+
+            <ImageButton
+                android:id="@+id/buttonStopRemote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_stop"
+                android:text="@string/txt_btn_stop" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switchMuteRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mute" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            android:textSize="18sp" />
+
+
+        <SeekBar
+            android:id="@+id/seekBarVolumeRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:thumb="@drawable/ic_action_volup" />
+
+        <Button
+            android:id="@+id/buttonRescanRemote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rescan" />
+
+
+    </LinearLayout>
+</FrameLayout>

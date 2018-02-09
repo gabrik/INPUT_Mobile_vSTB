@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageVIewProviderLogoRecorded"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_tv_black_24dp" />
+
+        <TextView
+            android:id="@+id/textViewShowNameRecorded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Recorder Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageVIewProviderLogoRecorded" />
+
+        <TextView
+            android:id="@+id/textViewShowDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:11:22:33"
+            android:layout_below="@+id/textViewShowNameRecorded"
+            android:layout_alignStart="@+id/textViewShowNameRecorded" />
+
+        <ImageView
+            android:id="@+id/imageViewPlayRecorded"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="332dp"
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+    </RelativeLayout>
+</LinearLayout>

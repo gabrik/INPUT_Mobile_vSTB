@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Media">
+        <menu>
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_providers"
+                android:icon="@drawable/ic_tv_black_24dp"
+                android:title="Live Channels" />
+                <item
+                    android:id="@+id/nav_recorded"
+                    android:icon="@drawable/ic_dvr"
+                    android:title="Recorded Media" />
+
+                <item
+                    android:id="@+id/nav_remote_control"
+                    android:icon="@mipmap/ic_remote_control"
+                    android:title="Remote Control" />
+
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="Others">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+    </group>
+</item>
+
+
+</menu>
